@@ -17,6 +17,23 @@
             margin-bottom: 12px;
             border-radius: 0px 0px 0px 25px;
         }
+        input{
+            width: 300px;
+            height: 40px;
+            border: solid ;
+            border-radius: 7px;
+            box-shadow: 5px,5px,5px,whitesmoke;
+    
+        }
+        .submitButton{
+            padding: 12px;
+            width: 70px;
+            height: 35px;
+            border: none;
+            background-color: blue;
+            border-radius: 25px;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -25,9 +42,11 @@
         <p>CHAT</p>
         <div>
             <?php foreach($data as $val): ?>
-                <div class="chat"><?= $val["message"] ?> </div>
+                <div class="chat"><?php echo $val["message"] ?> </div>
             <?php endforeach; ?>
         </div>
+        <input type="text" placeholder="Ecrire ton message ici">
+        <input type="submit" class="submitButton" value="Envoyer">
    </div>
     
 </body>
