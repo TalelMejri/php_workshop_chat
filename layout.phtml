@@ -43,6 +43,7 @@
         <div>
             <?php foreach($data as $val): ?>
                 <div class="chat"><?php echo $val["message"] ?> </div>
+                <a href="index.php?id=<?=$val['Id']?>">Delete</a>
             <?php endforeach; ?>
         </div>
         <form action="index.php" method="post">
