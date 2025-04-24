@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .chat{
+            background-color: antiquewhite;
+            padding: 70px;
+            font-size: 35px;
+            margin-bottom: 12px;
+            border-radius: 0px 0px 0px 25px;
+        }
+    </style>
 </head>
 <body>
 
-   <div>
+   <div class="main">
         <p>CHAT</p>
         <div>
             <?php foreach($data as $val): ?>
-                <p><?= $val["message"] ?> </p>
+                <div class="chat"><?= $val["message"] ?> </div>
             <?php endforeach; ?>
         </div>
    </div>

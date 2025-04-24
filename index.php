@@ -5,8 +5,7 @@
     $messages=$pdo->query("select * from messages");
     $data=$messages->fetchAll();
 
-
- include("layout.phtml")   ;
+    include("layout.phtml");
 
 
 
