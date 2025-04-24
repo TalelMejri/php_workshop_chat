@@ -45,8 +45,10 @@
                 <div class="chat"><?php echo $val["message"] ?> </div>
             <?php endforeach; ?>
         </div>
-        <input type="text" placeholder="Ecrire ton message ici">
-        <input type="submit" class="submitButton" value="Envoyer">
+        <form action="index.php" method="post">
+                <input type="text" placeholder="Ecrire ton message ici" name="message">
+                <input type="submit" class="submitButton" name="submit" value="Envoyer">
+        </form>
    </div>
     
 </body>
